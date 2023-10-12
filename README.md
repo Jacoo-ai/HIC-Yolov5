@@ -41,8 +41,18 @@ Your project name
 
 ### 3. Train the model
 
-Modify path args in `train.py`  
+Modify args in `train.py`. In HIC-Yolov5, some args are set as follows:
 
+* `--weights`: `yolov5s.pt`
+* `-cfg`: `models/yolov5s-p2-involution-cbam.yaml`
+* `--hyp`: `data/hyps/hyp.scratch-high.yaml`
+
+### 4. Evaluate the model
+
+Modify args in `val.py`.
+
+* `--weights`: the `best.pt` file in your result folder.
+* `--task`: can be `val` or `test`.
 
 ## Cite
 
